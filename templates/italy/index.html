@@ -1,0 +1,9 @@
+{% if regioni_list %}
+    <ul>
+    {% for regione in regioni_list %}
+        <li><a href="/italy/{{ regione.slug}}/">{{ regione.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No region available.</p>
+{% endif %}

@@ -1,0 +1,9 @@
+{% if prov_list %}
+    <ul>
+    {% for prov in prov_list %}
+        <li><a href="/italy/provincia/{{ prov.slug}}/">{{ prov.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No province available.</p>
+{% endif %}
